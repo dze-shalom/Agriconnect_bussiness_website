@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilot Program | AgriConnect - Join Our 2025 Agricultural Technology Testing</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Join AgriConnect's exclusive pilot program. 50 progressive farmers across Centre Region testing breakthrough satellite-IoT technology. Applications opening Q2 2025.">
+    <meta name="keywords" content="AgriConnect pilot program, smart farming testing, IoT agriculture Cameroon, precision farming pilot">
+    <meta name="author" content="AgriConnect Team">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="AgriConnect Pilot Program - Exclusive Early Access">
+    <meta property="og:description" content="Join 50 progressive farmers testing breakthrough satellite-IoT agricultural technology in Cameroon">
+    <meta property="og:image" content="images/technology/pilot-program-hero.jpg">
+    <meta property="og:url" content="https://agriconnect.cm/pilot-program.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/logo/favicon.ico">
+    <link rel="apple-touch-icon" href="images/logo/logo.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Pilot Program Specific Styles -->
+    <style>
+        .pilot-hero {
+            background: linear-gradient(135deg, var(--primary-green) 0%, var(--light-green) 100%);
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+            padding: calc(80px + var(--space-20)) 0 var(--space-20);
+        }
+        
+        .pilot-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="pilot-pattern" width="25" height="25" patternUnits="userSpaceOnUse"><circle cx="12.5" cy="12.5" r="1.5" fill="rgba(255,255,255,0.08)"/><circle cx="6" cy="19" r="0.8" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23pilot-pattern)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        .spots-remaining {
+            background: rgba(255, 71, 87, 0.1);
+            color: #ff4757;
+            padding: var(--space-2) var(--space-4);
+            border-radius: var(--radius-full);
+            font-size: 0.9rem;
+            font-weight: var(--font-weight-semibold);
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-2);
+            border: 1px solid rgba(255, 71, 87, 0.3);
+        }
+        
+        .benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-8);
+            margin: var(--space-16) 0;
+        }
+        
+        .benefit-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: var(--space-8);
+            border-radius: var(--radius-xl);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+        }
+        
+        .benefit-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--white);
+            color: var(--primary-green);
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto var(--space-6);
+            font-size: 2rem;
+        }
+        
+        .requirements-section {
+            background: var(--white);
+        }
+        
+        .requirements-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-16);
+        }
+        
+        .requirement-category {
+            background: var(--light-gray);
+            padding: var(--space-8);
+            border-radius: var(--radius-xl);
+            border-left: 4px solid var(--primary-green);
+        }
+        
+        .requirement-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .requirement-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-3);
+            margin-bottom: var(--space-4);
+            padding: var(--space-3);
+            background: var(--white);
+            border-radius: var(--radius-md);
+        }
+        
+        .requirement-icon {
+            color: var(--primary-green);
+            font-size: 1.2rem;
+            margin-top: 2px;
+            flex-shrink: 0;
+        }
+        
+        .timeline-section {
+            background: var(--very-light-green);
+        }
+        
+        .pilot-timeline {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .pilot-timeline::before {
+            content: '';
+            position: absolute;
+            left: 30px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(to bottom, var(--primary-green), var(--light-green));
+        }
+        
+        .timeline-phase {
+            position: relative;
+            margin-bottom: var(--space-12);
+            padding-left: var(--space-16);
+        }
+        
+        .timeline-phase::before {
+            content: '';
+            position: absolute;
+            left: -42px;
+            top: 20px;
+            width: 24px;
+            height: 24px;
+            background: var(--primary-green);
+            border-radius: 50%;
+            border: 4px solid var(--white);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .timeline-phase.current::before {
+            background: var(--light-green);
+            animation: pulse 2s infinite;
+        }
+        
+        .timeline-phase.future::before {
+            background: var(--border-light);
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+        }
+        
+        .phase-card {
+            background: var(--white);
+            padding: var(--space-8);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-base);
+            border: 1px solid var(--border-light);
+        }
+        
+        .phase-date {
+            color: var(--primary-green);
+            font-weight: var(--font-weight-bold);
+            font-size: 1.1rem;
+            margin-bottom: var(--space-2);
+        }
+        
+        .phase-title {
+            color: var(--dark-gray);
+            margin-bottom: var(--space-4);
+        }
+        
+        .application-form {
+            background: var(--white);
+            border-radius: var(--radius-2xl);
+            padding: var(--space-12);
+            box-shadow: var(--shadow-xl);
+            border: 1px solid var(--border-light);
+            margin-top: -60px;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .form-section {
+            margin-bottom: var(--space-10);
+        }
+        
+        .form-section h3 {
+            color: var(--primary-green);
+            margin-bottom: var(--space-6);
+            padding-bottom: var(--space-3);
+            border-bottom: 2px solid var(--very-light-green);
+        }
+        
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-6);
+        }
+        
+        .form-group {
+            margin-bottom: var(--space-6);
+        }
+        
+        .form-label {
+            display: block;
+            margin-bottom: var(--space-2);
+            font-weight: var(--font-weight-semibold);
+            color: var(--dark-gray);
+        }
+        
+        .required {
+            color: #ff4757;
+        }
+        
+        .form-input, .form-textarea, .form-select {
+            width: 100%;
+            padding: var(--space-4);
+            border: 2px solid var(--border-light);
+            border-radius: var(--radius-md);
+            font-family: var(--font-primary);
+            font-size: 1rem;
+            transition: var(--transition-colors);
+            background: var(--white);
+        }
+        
+        .form-input:focus, .form-textarea:focus, .form-select:focus {
+            outline: none;
+            border-color: var(--primary-green);
+            box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+        }
+        
+        .form-textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .form-note {
+            font-size: 0.875rem;
+            color: var(--medium-gray);
+            margin-top: var(--space-2);
+        }
+        
+        .commitment-box {
+            background: var(--very-light-green);
+            padding: var(--space-8);
+            border-radius: var(--radius-lg);
+            margin-bottom: var(--space-8);
+        }
+        
+        .commitment-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .commitment-list li {
+            display: flex;
+            align-items: center;
+            gap: var(--space-3);
+            margin-bottom: var(--space-3);
+            padding: var(--space-2);
+        }
+        
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-3);
+            margin-bottom: var(--space-6);
+        }
+        
+        .checkbox-group input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            margin: 0;
+            flex-shrink: 0;
+        }
+        
+        .checkbox-group label {
+            cursor: pointer;
+            line-height: 1.6;
+        }
+        
+        .faq-section {
+            background: var(--light-gray);
+        }
+        
+        .faq-item {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            margin-bottom: var(--space-4);
+            overflow: hidden;
+            box-shadow: var(--shadow-base);
+        }
+        
+        .faq-question {
+            width: 100%;
+            padding: var(--space-6);
+            background: none;
+            border: none;
+            text-align: left;
+            font-size: 1.1rem;
+            font-weight: var(--font-weight-semibold);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: var(--transition-colors);
+        }
+        
+        .faq-question:hover {
+            background: var(--very-light-green);
+        }
+        
+        .faq-answer {
+            padding: 0 var(--space-6) var(--space-6);
+            display: none;
+            color: var(--medium-gray);
+            line-height: 1.7;
+        }
+        
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+        
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+        
+        .success-message {
+            display: none;
+            text-align: center;
+            padding: var(--space-12);
+            color: var(--primary-green);
+        }
+        
+        .success-icon {
+            font-size: 4rem;
+            margin-bottom: var(--space-6);
+            color: var(--primary-green);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="images/logo/logo.jpg" alt="AgriConnect Logo">
+                    <span>AgriConnect</span>
+                </a>
+                
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle mobile menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                     <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="technology.html" class="nav-link">Our Technology</a></li>
+                    <li><a href="pilot-program.html" class="nav-link active">Pilot Program</a></li>
+                    <li><a href="beyond-agriculture.html" class="nav-link">Beyond Agriculture</a></li>
+                    <li><a href="progress.html" class="nav-link">Progress</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Pilot Hero Section -->
+        <section class="pilot-hero">
+            <div class="container">
+                <div style="position: relative; z-index: 2; text-align: center; max-width: 900px; margin: 0 auto;">
+                    <div class="spots-remaining">
+                        <i class="fas fa-fire"></i>
+                        Planning to work with 5 progressive farms
+                    </div>
+                    
+                    <h1 style="color: var(--white); margin-bottom: var(--space-6);">
+                        Join Our Exclusive 
+                        <span style="display: block; margin-top: var(--space-2);">Pilot Program</span>
+                    </h1>
+                    
+                    <p class="text-large" style="color: rgba(255, 255, 255, 0.9); margin-bottom: var(--space-8); max-width: 700px; margin-left: auto; margin-right: auto;">
+                        Be among the first farmers to test breakthrough satellite-IoT technology. Complete system installation, training, and support at no cost during our 6-month development phase.
+                    </p>
+                    
+                    <!-- Key Benefits Preview -->
+                    <div class="benefit-grid">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-satellite-dish"></i>
+                            </div>
+                            <h3 style="color: var(--white); margin-bottom: var(--space-3);">500,000FRS Value</h3>
+                            <p style="color: rgba(255, 255, 255, 0.9);">Free sensor installation & satellite connectivity</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                            <h3 style="color: var(--white); margin-bottom: var(--space-3);">6 Months</h3>
+                            <p style="color: rgba(255, 255, 255, 0.9);">Complete training & ongoing support</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <h3 style="color: var(--white); margin-bottom: var(--space-3);">Priority Access</h3>
+                            <p style="color: rgba(255, 255, 255, 0.9);">First access to commercial platform</p>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: var(--space-12);">
+                        <a href="#application-form" class="btn btn-xl" style="background: var(--white); color: var(--primary-green); margin-right: var(--space-4);">
+                            <i class="fas fa-rocket"></i>
+                            Express Interest Now
+                        </a>
+                        <a href="#timeline" class="btn btn-xl" style="background: transparent; color: var(--white); border: 2px solid var(--white);">
+                            <i class="fas fa-calendar"></i>
+                            View Timeline
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What You Get Section -->
+        <section style="background: var(--white); padding: var(--space-20) 0;">
+            <div class="container">
+                <div class="section-header">
+                    <h2>What Pilot Partners Receive</h2>
+                    <p>Complete agricultural transformation with full support and training</p>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: var(--space-8);">
+                    <!-- Hardware Package -->
+                    <div style="background: var(--light-gray); padding: var(--space-8); border-radius: var(--radius-xl); border-left: 4px solid var(--primary-green);">
+                        <div style="display: flex; align-items: center; gap: var(--space-4); margin-bottom: var(--space-6);">
+                            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary-green), var(--light-green)); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-microchip" style="color: var(--white); font-size: 1.5rem;"></i>
+                            </div>
+                            <div>
+                                <h3 style="color: var(--primary-green); margin-bottom: var(--space-1);">Complete Hardware Package</h3>
+                                <p style="color: var(--medium-gray); font-size: 0.9rem; margin: 0;">500,000FRS+ Value</p>
+                            </div>
+                        </div>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-3);">
+                                <i class="fas fa-check text-green"></i>
+                                <span>Professional IoT sensor installation</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-3);">
+                                <i class="fas fa-check text-green"></i>
+                                <span>Soil monitoring (pH, moisture, nutrients)</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-3);">
+                                <i class="fas fa-check text-green"></i>
+                                <span>Weather station with microclimate data</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-3);">
+                                <i class="fas fa-check text-green"></i>
+                                <span>AI-powered camera system</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-2);">
+                                <i class="fas fa-check text-green"></i>
+                                <span>Smart irrigation controllers</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Platform Access -->
+                    <div style="background: var(--light-gray); padding: var(--space-8); border-radius: var(--radius-xl); border-left: 4px solid var(--light-green);">
+                        <div style="display: flex; align-items: center; gap: var(--space-4); margin-bottom: var(--space-6);">
+                            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--light-green), var(--accent-green)); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-mobile-alt" style="color: var(--white); font-size: 1.5rem;"></i>
+                            </div>
+                            <div>
+                                <h3 style="color: var(--primary-green); margin-bottom: var(--space-1);">Platform & App Access</h3>
+                                <p style="color: var(--medium-gray); font-size: 0.9rem; margin: 0;">6 Months Free</p>
+                            </div>
+                        </div>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-3);">
+                                <i class="fas fa-check text-green"></i>
+                                <span>Real-time dashboard with all farm data</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-3);">
+                                <i class="fas fa-check text-green"></i>
+                                <span>AI-powered recommendations engine</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-3);">
+                                <i class="fas fa-check text-green"></i>
+                                <span>Market price intelligence system</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-3);">
+                                <i class="fas fa-check text-green"></i>
+                                <span>Automated alert notifications</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-2);">
+                                <i class="fas fa-check text-green"></i>
+                                <span>Mobile app for iOS and Android</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Support & Training -->
+                    <div style="background: var(--light-gray); padding: var(--space-8); border-radius: var(--radius-xl); border-left: 4px solid var(--accent-green);">
+                        <div style="display: flex; align-items: center; gap: var(--space-4); margin-bottom: var(--space-6);">
+                            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--accent-green), var(--green-600)); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-hands-helping" style="color: var(--white); font-size: 1.5rem;"></i>
+                            </div>
+                            <div>
+                                <h3 style="color: var(--primary-green); margin-bottom: var(--space-1);">Expert Support & Training</h3>
+                                <p style="color: var(--medium-gray); font-size: 0.9rem; margin: 0;">Priority Access</p>
+                            </div>
+                        </div>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-3);">
+                                <i class="fas fa-check text-green"></i>
+                                <span>On-site installation and setup</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-3);">
+                                <i class="fas fa-check text-green"></i>
+                                <span>Comprehensive training program</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-3);">
+                                <i class="fas fa-check text-green"></i>
+                                <span>24/7 technical support hotline</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-3);">
+                                <i class="fas fa-check text-green"></i>
+                                <span>Monthly on-farm consultations</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-2);">
+                                <i class="fas fa-check text-green"></i>
+                                <span>Direct access to our engineers</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Requirements Section -->
+        <section class="requirements-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Pilot Program Requirements</h2>
+                    <p>We're looking for progressive farmers committed to agricultural innovation</p>
+                </div>
+                
+                <div class="requirements-grid">
+                    <div class="requirement-category">
+                        <h3 style="color: var(--primary-green); margin-bottom: var(--space-6); display: flex; align-items: center; gap: var(--space-3);">
+                            <i class="fas fa-seedling"></i>
+                            Farm Requirements
+                        </h3>
+                        <ul class="requirement-list">
+                            <li>
+                                <i class="fas fa-map-marker-alt requirement-icon"></i>
+                                <div>
+                                    <strong>Location:</strong> South West Region, Cameroon
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-ruler requirement-icon"></i>
+                                <div>
+                                    <strong>Size:</strong> Minimum 0.5 hectares under cultivation
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-leaf requirement-icon"></i>
+                                <div>
+                                    <strong>Crops:</strong> Vegetables, fruits, or cash crops (diversified preferred)
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-water requirement-icon"></i>
+                                <div>
+                                    <strong>Water Access:</strong> Reliable water source for irrigation
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-chart-line requirement-icon"></i>
+                                <div>
+                                    <strong>Goals:</strong> Interest in increasing productivity and efficiency
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="requirement-category">
+                        <h3 style="color: var(--primary-green); margin-bottom: var(--space-6); display: flex; align-items: center; gap: var(--space-3);">
+                            <i class="fas fa-user"></i>
+                            Farmer Requirements
+                        </h3>
+                        <ul class="requirement-list">
+                            <li>
+                                <i class="fas fa-mobile-alt requirement-icon"></i>
+                                <div>
+                                    <strong>Technology:</strong> Smartphone with internet access
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-graduation-cap requirement-icon"></i>
+                                <div>
+                                    <strong>Education:</strong> Basic literacy in French or English
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-clock requirement-icon"></i>
+                                <div>
+                                    <strong>Commitment:</strong> 6-month program participation
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-handshake requirement-icon"></i>
+                                <div>
+                                    <strong>Feedback:</strong> Weekly progress reports and testimonials
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-heart requirement-icon"></i>
+                                <div>
+                                    <strong>Attitude:</strong> Openness to new farming methods
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section class="timeline-section" id="timeline">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Pilot Program Timeline</h2>
+                    <p>Your journey from application to commercial platform access</p>
+                </div>
+                
+                <div class="pilot-timeline">
+                    <div class="timeline-phase completed">
+                        <div class="phase-card">
+                            <div class="phase-date">Q4 2024 - Q1 2025</div>
+                            <h4 class="phase-title">System Development & Preparation</h4>
+                            <p>Final development of satellite-IoT integration, mobile app completion, and pilot program preparation. Team training and support infrastructure setup.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-phase current">
+                        <div class="phase-card">
+                            <div class="phase-date">Q2 2025</div>
+                            <h4 class="phase-title">Applications & Partner Selection</h4>
+                            <p>Pilot applications open, farm assessments conducted, and participants selected based on criteria and commitment. Site surveys and installation planning completed.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-phase future">
+                        <div class="phase-card">
+                            <div class="phase-date">Q3 2025</div>
+                            <h4 class="phase-title">Installation & Training Launch</h4>
+                            <p>Complete sensor system installation across pilot farms, comprehensive farmer training programs, and active testing period begins with full support.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-phase future">
+                        <div class="phase-card">
+                            <div class="phase-date">Q3 - Q4 2025</div>
+                            <h4 class="phase-title">Active Testing & Optimization</h4>
+                            <p>6-month intensive testing period with weekly feedback collection, system optimization based on real-world performance, and continuous platform improvements.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-phase future">
+                        <div class="phase-card">
+                            <div class="phase-date">Q4 2025</div>
+                            <h4 class="phase-title">Program Completion & Commercial Launch</h4>
+                            <p>Final assessment and results documentation, transition to commercial platform with exclusive pilot partner pricing, and full public platform launch.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application Form Section -->
+        <section style="background: linear-gradient(135deg, var(--primary-green), var(--light-green)); padding: var(--space-24) 0;" id="application-form">
+            <div class="container">
+                <div class="application-form">
+                    <div class="text-center" style="margin-bottom: var(--space-12);">
+                        <h2 style="color: var(--primary-green); margin-bottom: var(--space-4);">Express Interest in Pilot Program</h2>
+                        <p class="text-large" style="color: var(--medium-gray); max-width: 600px; margin: 0 auto;">
+                            Complete the form below to express your interest. We'll contact you when applications officially open in Q2 2025.
+                        </p>
+                    </div>
+                    
+                    <form id="pilot-form" action="backend/pilot-signup.php" method="POST" novalidate>
+                        <input type="hidden" name="form-name" value="pilot-program">
+                        <!-- Personal Information -->
+                        <div class="form-section">
+                            <h3>Personal Information</h3>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label class="form-label" for="firstName">
+                                        First Name <span class="required">*</span>
+                                    </label>
+                                    <input type="text" id="firstName" name="firstName" class="form-input" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label" for="lastName">
+                                        Last Name <span class="required">*</span>
+                                    </label>
+                                    <input type="text" id="lastName" name="lastName" class="form-input" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label class="form-label" for="email">
+                                        Email Address <span class="required">*</span>
+                                    </label>
+                                    <input type="email" id="email" name="email" class="form-input" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label" for="phone">
+                                        Phone Number <span class="required">*</span>
+                                    </label>
+                                    <input type="tel" id="phone" name="phone" class="form-input" placeholder="+237 6XX XXX XXX" required>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Farm Information -->
+                        <div class="form-section">
+                            <h3>Farm Information</h3>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="farmLocation">
+                                    Farm Location <span class="required">*</span>
+                                </label>
+                                <input type="text" id="farmLocation" name="farmLocation" class="form-input" 
+                                       placeholder="City/Town, Southwest Region" required>
+                                <div class="form-note">Please specify your exact location within Southwest Region</div>
+                            </div>
+                            
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label class="form-label" for="farmSize">
+                                        Farm Size (Hectares) <span class="required">*</span>
+                                    </label>
+                                    <select id="farmSize" name="farmSize" class="form-select" required>
+                                        <option value="">Select farm size</option>
+                                        <option value="2-5">0.5-5 hectares</option>
+                                        <option value="6-10">6-10 hectares</option>
+                                        <option value="11-20">11-20 hectares</option>
+                                        <option value="21-50">21-50 hectares</option>
+                                        <option value="50+">50+ hectares</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label" for="primaryCrop">
+                                        Primary Crops <span class="required">*</span>
+                                    </label>
+                                    <select id="primaryCrop" name="primaryCrop" class="form-select" required>
+                                        <option value="">Select primary crops</option>
+                                        <option value="tomatoes">Tomatoes</option>
+                                        <option value="plantains">Plantains</option>
+                                        <option value="cocoa">Cocoa</option>
+                                        <option value="maize">Maize</option>
+                                        <option value="vegetables">Mixed Vegetables</option>
+                                        <option value="cassava">Cassava</option>
+                                        <option value="beans">Beans</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label class="form-label" for="farmingExperience">
+                                        Farming Experience <span class="required">*</span>
+                                    </label>
+                                    <select id="farmingExperience" name="farmingExperience" class="form-select" required>
+                                        <option value="">Select experience level</option>
+                                        <option value="1-2">1-2 years</option>
+                                        <option value="3-5">3-5 years</option>
+                                        <option value="6-10">6-10 years</option>
+                                        <option value="10+">10+ years</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label" for="currentIrrigation">
+                                        Current Irrigation Method <span class="required">*</span>
+                                    </label>
+                                    <select id="currentIrrigation" name="currentIrrigation" class="form-select" required>
+                                        <option value="">Select current method</option>
+                                        <option value="manual">Manual watering</option>
+                                        <option value="sprinklers">Sprinkler system</option>
+                                        <option value="drip">Drip irrigation</option>
+                                        <option value="none">No irrigation system</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Motivation & Goals -->
+                        <div class="form-section">
+                            <h3>Motivation & Goals</h3>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="motivation">
+                                    Why do you want to join the pilot program? <span class="required">*</span>
+                                </label>
+                                <textarea id="motivation" name="motivation" class="form-textarea" 
+                                          placeholder="Tell us about your farming goals, challenges you face, and how smart technology could help your farm..." 
+                                          required></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="biggestChallenge">
+                                    What's your biggest farming challenge currently?
+                                </label>
+                                <textarea id="biggestChallenge" name="biggestChallenge" class="form-textarea" 
+                                          placeholder="Water management, pest control, market access, labor costs, etc."></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="techComfort">
+                                    Technology Comfort Level <span class="required">*</span>
+                                </label>
+                                <select id="techComfort" name="techComfort" class="form-select" required>
+                                    <option value="">Select comfort level</option>
+                                    <option value="beginner">Beginner - Need guidance with smartphones/apps</option>
+                                    <option value="intermediate">Intermediate - Comfortable with basic apps</option>
+                                    <option value="advanced">Advanced - Tech-savvy and quick learner</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <!-- Commitment -->
+                        <div class="form-section">
+                            <h3>Program Commitment</h3>
+                            
+                            <div class="commitment-box">
+                                <h4 style="color: var(--primary-green); margin-bottom: var(--space-4);">Pilot Partner Responsibilities:</h4>
+                                <ul class="commitment-list">
+                                    <li>
+                                        <i class="fas fa-check text-green"></i>
+                                        <span>Provide weekly feedback on system performance</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check text-green"></i>
+                                        <span>Participate in monthly on-site consultations</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check text-green"></i>
+                                        <span>Allow system data collection for product improvement</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check text-green"></i>
+                                        <span>Share success stories and testimonials</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check text-green"></i>
+                                        <span>Complete 6-month program participation</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="commitment" name="commitment" required>
+                                <label for="commitment">
+                                    I understand and commit to the 6-month pilot program requirements 
+                                    <span class="required">*</span>
+                                </label>
+                            </div>
+                            
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="dataConsent" name="dataConsent" required>
+                                <label for="dataConsent">
+                                    I consent to data collection and usage for product development 
+                                    <span class="required">*</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Submit Button -->
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-xl" id="submit-button">
+                                <i class="fas fa-paper-plane"></i>
+                                Express Interest in Pilot Program
+                            </button>
+                            
+                            <p class="form-note" style="margin-top: var(--space-4); max-width: 500px; margin-left: auto; margin-right: auto;">
+                                We'll review your information and contact you when pilot applications officially open in Q2 2025.
+                            </p>
+                        </div>
+                    </form>
+                    
+                    <!-- Success Message -->
+                    <div class="success-message" id="success-message">
+                        <div class="success-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h2 style="color: var(--primary-green); margin-bottom: var(--space-4);">Interest Recorded Successfully!</h2>
+                        <p class="text-large" style="margin-bottom: var(--space-6); max-width: 500px; margin-left: auto; margin-right: auto;">
+                            Thank you for your interest in the AgriConnect Pilot Program. 
+                            We'll contact you when applications officially open in Q4 2025.
+                        </p>
+                        <p style="color: var(--medium-gray);">
+                            Questions? Contact us at 
+                            <a href="mailto:agri.connek@gmail.com" style="color: var(--primary-green);">agri.connek@gmail.com</a> 
+                            or <a href="https://wa.me/237650218174" style="color: var(--primary-green);">+237 695 465 755</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <div class="section-header">
+                        <h2>Frequently Asked Questions</h2>
+                        <p>Get answers to common questions about the pilot program</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            Is there any cost to participate in the pilot program?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No, the pilot program is completely free. We provide hardware installation, platform access, training, and support at no cost. This is our investment in perfecting the system before commercial launch.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            What happens to the equipment after the pilot program ends?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>You can keep all installed equipment. Pilot participants receive priority access to the commercial platform with special pricing when it launches.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            How much time commitment is required?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Minimal daily time is required - just check your phone for alerts and recommendations. We ask for about 30 minutes weekly for feedback and monthly on-site consultations (1-2 hours).</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            Do I need technical skills to participate?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No technical skills required. If you can use a smartphone for calls and messaging, you can use our system. We provide comprehensive training and ongoing support throughout the program.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            What if I'm not selected for the pilot program?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We'll keep your information on file for future opportunities and notify you about our commercial launch with early-bird pricing for interested farmers.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            Can I withdraw from the pilot program if needed?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, you can withdraw at any time, though we hope you'll complete the full 6 months to maximize benefits. We ask for 30 days notice to properly transition the equipment and data.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section style="background: var(--primary-green); color: var(--white); padding: var(--space-16) 0;">
+            <div class="container">
+                <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+                    <h2 style="color: var(--white); margin-bottom: var(--space-6);">
+                        Questions About the Pilot Program?
+                    </h2>
+                    <p class="text-large" style="color: rgba(255, 255, 255, 0.9); margin-bottom: var(--space-8);">
+                        Our team is here to help you understand the program and determine if it's right for your farm.
+                    </p>
+                    
+                    <div style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap; margin-bottom: var(--space-8);">
+                        <a href="mailto:agri.connek@gmail.com" class="btn btn-xl" 
+                           style="background: var(--white); color: var(--primary-green);">
+                            <i class="fas fa-envelope"></i>
+                            Email Us
+                        </a>
+                        <a href="https://wa.me/237650218174" target="_blank" class="btn btn-xl" 
+                           style="background: transparent; color: var(--white); border: 2px solid var(--white);">
+                            <i class="fab fa-whatsapp"></i>
+                            WhatsApp
+                        </a>
+                    </div>
+                    
+                    <p style="color: rgba(255, 255, 255, 0.8);">
+                        <i class="fas fa-phone"></i> +237 650 218 174 |
+                        <i class="fas fa-envelope"></i> agri.connek@gmail.com
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logo/logo-white.jpg" alt="AgriConnect Logo">
+                        <span>AgriConnect</span>
+                    </div>
+                    <p>Building Africa's first satellite-powered smart farming platform with AIMS Cameroon research support and NMD satellite technology.</p>
+                    <div class="footer-social">
+                        <a href="mailto:agri.connek@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://wa.me/237650218174" target="_blank" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Pilot Program</h4>
+                    <ul>
+                        <li><a href="#application-form">Apply for Pilot</a></li>
+                        <li><a href="#timeline">Program Timeline</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="technology.html">Our Technology</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="progress.html">Development Progress</a></li>
+                        <li><a href="beyond-agriculture.html">IoT Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:agri.connek@gmail.com">agri.connek@gmail.com</a></li>
+                        <li><a href="https://wa.me/237650218174" target="_blank">+237 650 218 174</a></li>
+                        <li>Limbe, Cameroon</li>
+                        <li><a href="contact.html">Get in Touch</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 AgriConnect. Building the future of African agriculture.</p>
+                    <p class="footer-tagline"><p>Inform, Connect, Inspire</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/analytics.js"></script>
+    
+    <script>
+        // FAQ Toggle Function
+        function toggleFAQ(button) {
+            const faqItem = button.closest('.faq-item');
+            const isActive = faqItem.classList.contains('active');
+            
+            // Close all FAQ items
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            
+            // Toggle current item
+            if (!isActive) {
+                faqItem.classList.add('active');
+            }
+        }
+        
+        // Pilot form specific handling
+        document.addEventListener('DOMContentLoaded', function() {
+            const pilotForm = document.getElementById('pilot-form');
+            if (pilotForm) {
+                pilotForm.addEventListener('submit', handlePilotFormSubmission);
+            }
+        });
+        
+        async function handlePilotFormSubmission(e) {
+            e.preventDefault();
+            
+            const form = e.target;
+            const submitButton = document.getElementById('submit-button');
+            const originalText = submitButton.innerHTML;
+            
+            // Show loading state
+            submitButton.innerHTML = '<span style="display: flex; align-items: center; gap: 8px;"><i class="fas fa-spinner fa-spin"></i> Submitting...</span>';
+            submitButton.disabled = true;
+            
+            // Collect form data
+            const formData = new FormData(form);
+            const applicationData = {};
+            
+            for (let [key, value] of formData.entries()) {
+                applicationData[key] = value;
+            }
+            
+            try {
+                // Simulate successful submission (replace with your actual endpoint)
+                await new Promise(resolve => setTimeout(resolve, 2000));
+                
+                // Show success message
+                form.style.display = 'none';
+                document.getElementById('success-message').style.display = 'block';
+                
+                // Track event
+                if (window.AgriConnect && window.AgriConnect.trackEvent) {
+                    window.AgriConnect.trackEvent('Pilot Program', 'Interest Expressed', applicationData.email);
+                }
+                
+                // Scroll to success message
+                document.getElementById('success-message').scrollIntoView({ behavior: 'smooth' });
+                
+            } catch (error) {
+                console.error('Pilot application error:', error);
+                
+                if (window.AgriConnect && window.AgriConnect.showNotification) {
+                    window.AgriConnect.showNotification(
+                        'Something went wrong. Please try again or contact us directly.', 
+                        'error'
+                    );
+                }
+                
+                // Restore button
+                submitButton.innerHTML = originalText;
+                submitButton.disabled = false;
+            }
+        }
+    </script>
+</body>
+</html>

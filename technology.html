@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Technology | AgriConnect - Satellite-IoT Agricultural Platform</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Learn about AgriConnect's breakthrough satellite-IoT technology combining LoRa sensors with NMD satellite connectivity for precision agriculture across Africa.">
+    <meta name="keywords" content="satellite IoT, LoRa sensors, precision agriculture, NMD satellite, smart farming technology, agricultural sensors">
+    <meta name="author" content="AgriConnect Team">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="AgriConnect Technology - Satellite-IoT Agricultural Platform">
+    <meta property="og:description" content="Breakthrough satellite-IoT technology for African agriculture">
+    <meta property="og:image" content="images/technology/satellite-iot-system.jpg">
+    <meta property="og:url" content="https://agriconnect.cm/technology.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/logo/favicon.ico">
+    <link rel="apple-touch-icon" href="images/logo/logo.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Image Placeholder Styles -->
+    <style>
+        .image-placeholder {
+            background: linear-gradient(135deg, #E8F5E8, #f0f8ff);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: var(--primary-green);
+            text-align: center;
+            padding: 2rem;
+            font-weight: 600;
+        }
+        .image-placeholder i {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .image-placeholder.system {
+            height: 300px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .image-placeholder.prototype {
+            height: 200px;
+            background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="images/logo/logo.jpg" alt="AgriConnect Logo">
+                    <span>AgriConnect</span>
+                </a>
+                
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle mobile menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</li>
+                    <li><a href="technology.html" class="nav-link active">Our Technology</a></li>
+                    <li><a href="pilot-program.html" class="nav-link btn btn-primary btn-sm">Pilot Program</a></li>
+                    <li><a href="beyond-agriculture.html" class="nav-link">Beyond Agriculture</a></li>
+                    <li><a href="progress.html" class="nav-link">Progress</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Technology Hero -->
+        <section class="hero" style="min-height: 70vh; background: linear-gradient(135deg, var(--primary-green), var(--light-green));">
+            <div class="container">
+                <div class="hero-content" style="text-align: center; max-width: 900px; margin: 0 auto;">
+                    <div class="development-badge">
+                        <i class="fas fa-cogs"></i>
+                        Currently in Development | System Integration Phase
+                    </div>
+                    
+                    <h1 style="color: var(--white); margin-bottom: var(--space-6);">
+                        Satellite-IoT Technology
+                        <span style="display: block; margin-top: var(--space-2); font-size: 0.7em; opacity: 0.9;">
+                            Revolutionizing African Agriculture
+                        </span>
+                    </h1>
+                    
+                    <p class="text-large" style="color: rgba(255, 255, 255, 0.9); margin-bottom: var(--space-8); max-width: 700px; margin-left: auto; margin-right: auto;">
+                        We're developing Africa's first comprehensive satellite-IoT platform that combines ground-based LoRa sensor networks with NMD's satellite infrastructure for unprecedented agricultural monitoring and automation.
+                    </p>
+                    
+                    <div style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;">
+                        <a href="#system-overview" class="btn btn-xl" style="background: var(--white); color: var(--primary-green);">
+                            <i class="fas fa-satellite"></i>
+                            Explore Our System
+                        </a>
+                        <a href="pilot-program.html" class="btn btn-xl" style="background: transparent; color: var(--white); border: 2px solid var(--white);">
+                            <i class="fas fa-rocket"></i>
+                            Join Pilot Program
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- System Overview -->
+        <section id="system-overview" style="background: var(--white); padding: var(--space-20) 0;">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Complete Agricultural Intelligence System</h2>
+                    <p>Three integrated technology layers working together for comprehensive farm management</p>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: var(--space-12); margin-bottom: var(--space-16);">
+                    <!-- Ground Layer -->
+                    <div style="text-align: center;">
+                        <div style="width: 120px; height: 120px; background: linear-gradient(135deg, var(--primary-green), var(--light-green)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-6); box-shadow: var(--shadow-xl);">
+                            <i class="fas fa-seedling" style="color: var(--white); font-size: 3rem;"></i>
+                        </div>
+                        <h3 style="color: var(--primary-green); margin-bottom: var(--space-4);">Ground Layer: Smart Sensors</h3>
+                        <p style="color: var(--medium-gray); line-height: 1.7;">
+                            LoRa-powered sensor networks monitoring soil conditions, weather patterns, and crop health with real-time data collection across your entire farm.
+                        </p>
+                    </div>
+                    
+                    <!-- Satellite Layer -->
+                    <div style="text-align: center;">
+                        <div style="width: 120px; height: 120px; background: linear-gradient(135deg, var(--light-green), var(--accent-green)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-6); box-shadow: var(--shadow-xl);">
+                            <i class="fas fa-satellite" style="color: var(--white); font-size: 3rem;"></i>
+                        </div>
+                        <h3 style="color: var(--primary-green); margin-bottom: var(--space-4);">Satellite Layer: NMD Connectivity</h3>
+                        <p style="color: var(--medium-gray); line-height: 1.7;">
+                            NMD satellite technology ensures reliable data transmission even in remote areas, providing weather intelligence and enabling precision agriculture anywhere in Cameroon.
+                        </p>
+                    </div>
+                    
+                    <!-- Intelligence Layer -->
+                    <div style="text-align: center;">
+                        <div style="width: 120px; height: 120px; background: linear-gradient(135deg, var(--accent-green), var(--green-600)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-6); box-shadow: var(--shadow-xl);">
+                            <i class="fas fa-brain" style="color: var(--white); font-size: 3rem;"></i>
+                        </div>
+                        <h3 style="color: var(--primary-green); margin-bottom: var(--space-4);">AI Layer: Smart Decision Making</h3>
+                        <p style="color: var(--medium-gray); line-height: 1.7;">
+                            Machine learning algorithms analyze data patterns to provide actionable insights, automated alerts, and precision recommendations for optimal crop yields.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- System Architecture Diagram -->
+                <div style="background: var(--light-gray); padding: var(--space-12); border-radius: var(--radius-xl); text-align: center;">
+                    <h3 style="color: var(--primary-green); margin-bottom: var(--space-8);">System Architecture</h3>
+                    <div style="background: var(--white); padding: var(--space-8); border-radius: var(--radius-lg); margin-bottom: var(--space-6);">
+                        <img src="images/technology/system-architecture.jpg" alt="AgriConnect System Architecture" style="width: 100%; max-width: 800px; height: auto; border-radius: var(--radius-md);" 
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="image-placeholder system" style="display: none;">
+                            <i class="fas fa-network-wired"></i>
+                            <div>System Architecture Diagram</div>
+                        </div>
+                    </div>
+                    <p style="color: var(--medium-gray);">
+                        <em>Comprehensive system diagram showing sensor networks, satellite connectivity, and AI processing pipeline</em>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Components -->
+        <section style="background: var(--very-light-green); padding: var(--space-20) 0;">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Technology Components</h2>
+                    <p>Advanced hardware and software working together for precision agriculture</p>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-8);">
+                    <!-- Soil Monitoring -->
+                    <div style="background: var(--white); padding: var(--space-8); border-radius: var(--radius-xl); box-shadow: var(--shadow-base); border-left: 4px solid var(--primary-green);">
+                        <div style="display: flex; align-items: center; gap: var(--space-4); margin-bottom: var(--space-6);">
+                            <div style="width: 60px; height: 60px; background: var(--primary-green); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-tint" style="color: var(--white); font-size: 1.5rem;"></i>
+                            </div>
+                            <div>
+                                <h4 style="color: var(--primary-green); margin-bottom: var(--space-1);">Soil Monitoring System</h4>
+                                <p style="color: var(--medium-gray); font-size: 0.9rem; margin: 0;">Multi-parameter sensors</p>
+                            </div>
+                        </div>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-3);">
+                                <i class="fas fa-check text-green"></i>
+                                <span>pH levels and nutrient content</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-3);">
+                                <i class="fas fa-check text-green"></i>
+                                <span>Moisture and temperature monitoring</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-3);">
+                                <i class="fas fa-check text-green"></i>
+                                <span>Electrical conductivity measurement</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-2);">
+                                <i class="fas fa-check text-green"></i>
+                                <span>Real-time data transmission via LoRa</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Weather Station -->
+                    <div style="background: var(--white); padding: var(--space-8); border-radius: var(--radius-xl); box-shadow: var(--shadow-base); border-left: 4px solid var(--light-green);">
+                        <div style="display: flex; align-items: center; gap: var(--space-4); margin-bottom: var(--space-6);">
+                            <div style="width: 60px; height: 60px; background: var(--light-green); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-cloud-sun" style="color: var(--white); font-size: 1.5rem;"></i>
+                            </div>
+                            <div>
+                                <h4 style="color: var(--primary-green); margin-bottom: var(--space-1);">Weather Intelligence</h4>
+                                <p style="color: var(--medium-gray); font-size: 0.9rem; margin: 0;">Microclimate monitoring</p>
+                            </div>
+                        </div>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-3);">
+                                <i class="fas fa-check text-green"></i>
+                                <span>Temperature and humidity tracking</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-3);">
+                                <i class="fas fa-check text-green"></i>
+                                <span>Wind speed and direction sensors</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-3);">
+                                <i class="fas fa-check text-green"></i>
+                                <span>Rainfall measurement and prediction</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-2);">
+                                <i class="fas fa-check text-green"></i>
+                                <span>Solar radiation and UV index</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Crop Monitoring -->
+                    <div style="background: var(--white); padding: var(--space-8); border-radius: var(--radius-xl); box-shadow: var(--shadow-base); border-left: 4px solid var(--accent-green);">
+                        <div style="display: flex; align-items: center; gap: var(--space-4); margin-bottom: var(--space-6);">
+                            <div style="width: 60px; height: 60px; background: var(--accent-green); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-camera" style="color: var(--white); font-size: 1.5rem;"></i>
+                            </div>
+                            <div>
+                                <h4 style="color: var(--primary-green); margin-bottom: var(--space-1);">AI Vision System</h4>
+                                <p style="color: var(--medium-gray); font-size: 0.9rem; margin: 0;">Computer vision analysis</p>
+                            </div>
+                        </div>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-3);">
+                                <i class="fas fa-check text-green"></i>
+                                <span>Crop health and disease detection</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-3);">
+                                <i class="fas fa-check text-green"></i>
+                                <span>Growth stage identification</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-3);">
+                                <i class="fas fa-check text-green"></i>
+                                <span>Pest and weed recognition</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-2);">
+                                <i class="fas fa-check text-green"></i>
+                                <span>Yield estimation and harvest timing</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Irrigation Control -->
+                    <div style="background: var(--white); padding: var(--space-8); border-radius: var(--radius-xl); box-shadow: var(--shadow-base); border-left: 4px solid var(--green-600);">
+                        <div style="display: flex; align-items: center; gap: var(--space-4); margin-bottom: var(--space-6);">
+                            <div style="width: 60px; height: 60px; background: var(--green-600); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-faucet" style="color: var(--white); font-size: 1.5rem;"></i>
+                            </div>
+                            <div>
+                                <h4 style="color: var(--primary-green); margin-bottom: var(--space-1);">Smart Irrigation</h4>
+                                <p style="color: var(--medium-gray); font-size: 0.9rem; margin: 0;">Automated water management</p>
+                            </div>
+                        </div>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-3);">
+                                <i class="fas fa-check text-green"></i>
+                                <span>Precision drip irrigation control</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-3);">
+                                <i class="fas fa-check text-green"></i>
+                                <span>Water usage optimization</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-3);">
+                                <i class="fas fa-check text-green"></i>
+                                <span>Automated scheduling based on data</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-2);">
+                                <i class="fas fa-check text-green"></i>
+                                <span>Remote control via mobile app</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Satellite Connectivity -->
+                    <div style="background: var(--white); padding: var(--space-8); border-radius: var(--radius-xl); box-shadow: var(--shadow-base); border-left: 4px solid var(--green-700);">
+                        <div style="display: flex; align-items: center; gap: var(--space-4); margin-bottom: var(--space-6);">
+                            <div style="width: 60px; height: 60px; background: var(--green-700); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-satellite-dish" style="color: var(--white); font-size: 1.5rem;"></i>
+                            </div>
+                            <div>
+                                <h4 style="color: var(--primary-green); margin-bottom: var(--space-1);">NMD Satellite Link</h4>
+                                <p style="color: var(--medium-gray); font-size: 0.9rem; margin: 0;">Reliable connectivity</p>
+                            </div>
+                        </div>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-3);">
+                                <i class="fas fa-check text-green"></i>
+                                <span>Connectivity in remote areas</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-3);">
+                                <i class="fas fa-check text-green"></i>
+                                <span>Weather data from satellite sources</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-3);">
+                                <i class="fas fa-check text-green"></i>
+                                <span>Market price information delivery</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-2);">
+                                <i class="fas fa-check text-green"></i>
+                                <span>Backup communication channel</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Mobile Application -->
+                    <div style="background: var(--white); padding: var(--space-8); border-radius: var(--radius-xl); box-shadow: var(--shadow-base); border-left: 4px solid #2e7d32;">
+                        <div style="display: flex; align-items: center; gap: var(--space-4); margin-bottom: var(--space-6);">
+                            <div style="width: 60px; height: 60px; background: #2e7d32; border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-mobile-alt" style="color: var(--white); font-size: 1.5rem;"></i>
+                            </div>
+                            <div>
+                                <h4 style="color: var(--primary-green); margin-bottom: var(--space-1);">Mobile Dashboard</h4>
+                                <p style="color: var(--medium-gray); font-size: 0.9rem; margin: 0;">Complete farm control</p>
+                            </div>
+                        </div>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-3);">
+                                <i class="fas fa-check text-green"></i>
+                                <span>Real-time data visualization</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-3);">
+                                <i class="fas fa-check text-green"></i>
+                                <span>AI-powered recommendations</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-3);">
+                                <i class="fas fa-check text-green"></i>
+                                <span>Alert and notification system</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-2);">
+                                <i class="fas fa-check text-green"></i>
+                                <span>Historical data and trends</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Development Progress -->
+        <section style="background: var(--white); padding: var(--space-20) 0;">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Development Progress</h2>
+                    <p>Current status of our technology development and integration testing</p>
+                </div>
+                
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <!-- Progress Items -->
+                    <div style="display: flex; flex-direction: column; gap: var(--space-8);">
+                        <!-- Completed -->
+                        <div style="display: flex; align-items: flex-start; gap: var(--space-4);">
+                            <div style="width: 60px; height: 60px; background: var(--primary-green); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <i class="fas fa-check" style="color: var(--white); font-size: 1.5rem;"></i>
+                            </div>
+                            <div style="flex: 1;">
+                                <h4 style="color: var(--primary-green); margin-bottom: var(--space-2);">Sensor Hardware Development</h4>
+                                <p style="color: var(--medium-gray); margin-bottom: var(--space-3);">
+                                    Completed development and testing of LoRa-based sensor modules for soil monitoring, weather tracking, and crop surveillance.
+                                </p>
+                                <div style="background: var(--very-light-green); border-radius: var(--radius-base); height: 8px; overflow: hidden;">
+                                    <div style="width: 100%; height: 100%; background: var(--primary-green);"></div>
+                                </div>
+                                <p style="color: var(--medium-gray); font-size: 0.875rem; margin-top: var(--space-2);">Completed - Q4 2024</p>
+                            </div>
+                        </div>
+                        
+                        <!-- In Progress -->
+                        <div style="display: flex; align-items: flex-start; gap: var(--space-4);">
+                            <div style="width: 60px; height: 60px; background: var(--light-green); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <i class="fas fa-cog fa-spin" style="color: var(--white); font-size: 1.5rem;"></i>
+                            </div>
+                            <div style="flex: 1;">
+                                <h4 style="color: var(--primary-green); margin-bottom: var(--space-2);">Satellite-IoT Integration</h4>
+                                <p style="color: var(--medium-gray); margin-bottom: var(--space-3);">
+                                    Currently integrating our sensor networks with NMD's satellite infrastructure for reliable data transmission across remote areas.
+                                </p>
+                                <div style="background: var(--very-light-green); border-radius: var(--radius-base); height: 8px; overflow: hidden;">
+                                    <div style="width: 75%; height: 100%; background: var(--light-green);"></div>
+                                </div>
+                                <p style="color: var(--medium-gray); font-size: 0.875rem; margin-top: var(--space-2);">75% Complete - Q1 2025</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Upcoming -->
+                        <div style="display: flex; align-items: flex-start; gap: var(--space-4);">
+                            <div style="width: 60px; height: 60px; background: var(--border-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <i class="fas fa-mobile-alt" style="color: var(--medium-gray); font-size: 1.5rem;"></i>
+                            </div>
+                            <div style="flex: 1;">
+                                <h4 style="color: var(--primary-green); margin-bottom: var(--space-2);">Mobile Application Development</h4>
+                                <p style="color: var(--medium-gray); margin-bottom: var(--space-3);">
+                                    Final development of farmer-facing mobile application with intuitive dashboard, AI recommendations, and automated alert systems.
+                                </p>
+                                <div style="background: var(--very-light-green); border-radius: var(--radius-base); height: 8px; overflow: hidden;">
+                                    <div style="width: 45%; height: 100%; background: var(--accent-green);"></div>
+                                </div>
+                                <p style="color: var(--medium-gray); font-size: 0.875rem; margin-top: var(--space-2);">45% Complete - Q2 2025</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Future -->
+                        <div style="display: flex; align-items: flex-start; gap: var(--space-4);">
+                            <div style="width: 60px; height: 60px; background: var(--border-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <i class="fas fa-rocket" style="color: var(--medium-gray); font-size: 1.5rem;"></i>
+                            </div>
+                            <div style="flex: 1;">
+                                <h4 style="color: var(--primary-green); margin-bottom: var(--space-2);">Pilot Testing & Launch</h4>
+                                <p style="color: var(--medium-gray); margin-bottom: var(--space-3);">
+                                    Comprehensive field testing with 50 pilot farms, system optimization based on real-world feedback, and commercial platform launch.
+                                </p>
+                                <div style="background: var(--very-light-green); border-radius: var(--radius-base); height: 8px; overflow: hidden;">
+                                    <div style="width: 10%; height: 100%; background: var(--green-600);"></div>
+                                </div>
+                                <p style="color: var(--medium-gray); font-size: 0.875rem; margin-top: var(--space-2);">Planning Phase - Q3 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Specifications -->
+        <section style="background: var(--light-gray); padding: var(--space-20) 0;">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Technical Specifications</h2>
+                    <p>Detailed technical information about our agricultural IoT system</p>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-8);">
+                    <!-- Sensor Specs -->
+                    <div style="background: var(--white); padding: var(--space-8); border-radius: var(--radius-xl); box-shadow: var(--shadow-base);">
+                        <h4 style="color: var(--primary-green); margin-bottom: var(--space-6); display: flex; align-items: center; gap: var(--space-3);">
+                            <i class="fas fa-microchip"></i>
+                            Sensor Network Specifications
+                        </h4>
+                        <table style="width: 100%; border-collapse: collapse;">
+                            <tr style="border-bottom: 1px solid var(--border-light);">
+                                <td style="padding: var(--space-3) 0; font-weight: var(--font-weight-semibold);">Communication</td>
+                                <td style="padding: var(--space-3) 0; color: var(--medium-gray);">LoRaWAN Class A</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--border-light);">
+                                <td style="padding: var(--space-3) 0; font-weight: var(--font-weight-semibold);">Range</td>
+                                <td style="padding: var(--space-3) 0; color: var(--medium-gray);">Up to 15km line-of-sight</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--border-light);">
+                                <td style="padding: var(--space-3) 0; font-weight: var(--font-weight-semibold);">Battery Life</td>
+                                <td style="padding: var(--space-3) 0; color: var(--medium-gray);">5+ years (replaceable)</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--border-light);">
+                                <td style="padding: var(--space-3) 0; font-weight: var(--font-weight-semibold);">IP Rating</td>
+                                <td style="padding: var(--space-3) 0; color: var(--medium-gray);">IP67 (weatherproof)</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: var(--space-3) 0; font-weight: var(--font-weight-semibold);">Data Frequency</td>
+                                <td style="padding: var(--space-3) 0; color: var(--medium-gray);">15-minute intervals</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <!-- Connectivity Specs -->
+                    <div style="background: var(--white); padding: var(--space-8); border-radius: var(--radius-xl); box-shadow: var(--shadow-base);">
+                        <h4 style="color: var(--primary-green); margin-bottom: var(--space-6); display: flex; align-items: center; gap: var(--space-3);">
+                            <i class="fas fa-satellite"></i>
+                            Satellite Connectivity
+                        </h4>
+                        <table style="width: 100%; border-collapse: collapse;">
+                            <tr style="border-bottom: 1px solid var(--border-light);">
+                                <td style="padding: var(--space-3) 0; font-weight: var(--font-weight-semibold);">Provider</td>
+                                <td style="padding: var(--space-3) 0; color: var(--medium-gray);">NMD Satellite Technology</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--border-light);">
+                                <td style="padding: var(--space-3) 0; font-weight: var(--font-weight-semibold);">Coverage</td>
+                                <td style="padding: var(--space-3) 0; color: var(--medium-gray);">Cameroon-wide</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--border-light);">
+                                <td style="padding: var(--space-3) 0; font-weight: var(--font-weight-semibold);">Latency</td>
+                                <td style="padding: var(--space-3) 0; color: var(--medium-gray);">&lt; 500ms average</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--border-light);">
+                                <td style="padding: var(--space-3) 0; font-weight: var(--font-weight-semibold);">Reliability</td>
+                                <td style="padding: var(--space-3) 0; color: var(--medium-gray);">99.5% uptime</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: var(--space-3) 0; font-weight: var(--font-weight-semibold);">Data Transfer</td>
+                                <td style="padding: var(--space-3) 0; color: var(--medium-gray);">Bidirectional</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <!-- Platform Specs -->
+                    <div style="background: var(--white); padding: var(--space-8); border-radius: var(--radius-xl); box-shadow: var(--shadow-base);">
+                        <h4 style="color: var(--primary-green); margin-bottom: var(--space-6); display: flex; align-items: center; gap: var(--space-3);">
+                            <i class="fas fa-cloud"></i>
+                            Platform Architecture
+                        </h4>
+                        <table style="width: 100%; border-collapse: collapse;">
+                            <tr style="border-bottom: 1px solid var(--border-light);">
+                                <td style="padding: var(--space-3) 0; font-weight: var(--font-weight-semibold);">Infrastructure</td>
+                                <td style="padding: var(--space-3) 0; color: var(--medium-gray);">Cloud-native</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--border-light);">
+                                <td style="padding: var(--space-3) 0; font-weight: var(--font-weight-semibold);">AI Processing</td>
+                                <td style="padding: var(--space-3) 0; color: var(--medium-gray);">Real-time ML pipeline</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--border-light);">
+                                <td style="padding: var(--space-3) 0; font-weight: var(--font-weight-semibold);">Data Storage</td>
+                                <td style="padding: var(--space-3) 0; color: var(--medium-gray);">Encrypted & secure</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--border-light);">
+                                <td style="padding: var(--space-3) 0; font-weight: var(--font-weight-semibold);">API Access</td>
+                                <td style="padding: var(--space-3) 0; color: var(--medium-gray);">RESTful APIs</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: var(--space-3) 0; font-weight: var(--font-weight-semibold);">Mobile Apps</td>
+                                <td style="padding: var(--space-3) 0; color: var(--medium-gray);">iOS & Android native</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prototype Showcase -->
+        <section style="background: var(--white); padding: var(--space-20) 0;">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Prototype Gallery</h2>
+                    <p>See our actual hardware prototypes and testing progress</p>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-8);">
+                    <div style="background: var(--light-gray); border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-base);">
+                        <img src="images/technology/sensor-prototype.jpg" alt="Soil sensor prototype" style="width: 100%; height: 200px; object-fit: cover;">
+                        <div style="padding: var(--space-6);">
+                            <h4 style="color: var(--primary-green); margin-bottom: var(--space-3);">Soil Sensor Module</h4>
+                            <p style="color: var(--medium-gray); font-size: 0.9rem;">Multi-parameter soil monitoring sensor with LoRa communication capability.</p>
+                        </div>
+                    </div>
+                    
+                    <div style="background: var(--light-gray); border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-base);">
+                        <img src="images/technology/lora-testing.jpg" alt="LoRa network testing" style="width: 100%; height: 200px; object-fit: cover;">
+                        <div style="padding: var(--space-6);">
+                            <h4 style="color: var(--primary-green); margin-bottom: var(--space-3);">LoRa Network Testing</h4>
+                            <p style="color: var(--medium-gray); font-size: 0.9rem;">Field testing of long-range communication capabilities across different terrains.</p>
+                        </div>
+                    </div>
+                    
+                    <div style="background: var(--light-gray); border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-base);">
+                        <img src="images/technology/satellite-integration.jpg" alt="Satellite integration testing" style="width: 100%; height: 200px; object-fit: cover;" 
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="image-placeholder prototype" style="display: none;">
+                            <i class="fas fa-satellite-dish"></i>
+                            <div>Satellite Integration</div>
+                        </div>
+                        <div style="padding: var(--space-6);">
+                            <h4 style="color: var(--primary-green); margin-bottom: var(--space-3);">Satellite Integration</h4>
+                            <p style="color: var(--medium-gray); font-size: 0.9rem;">Testing satellite connectivity with NMD infrastructure for remote data transmission.</p>
+                        </div>
+                    </div>
+                    
+                    <div style="background: var(--light-gray); border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-base);">
+                        <img src="images/technology/dashboard-mockup.jpg" alt="Dashboard interface" style="width: 100%; height: 200px; object-fit: cover;">
+                        <div style="padding: var(--space-6);">
+                            <h4 style="color: var(--primary-green); margin-bottom: var(--space-3);">Dashboard Interface</h4>
+                            <p style="color: var(--medium-gray); font-size: 0.9rem;">Real-time data visualization and AI-powered insights dashboard.</p>
+                        </div>
+                    </div>
+                    
+                    <div style="background: var(--light-gray); border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-base);">
+                        <img src="images/technology/platform-preview.jpg" alt="Mobile application" style="width: 100%; height: 200px; object-fit: cover;">
+                        <div style="padding: var(--space-6);">
+                            <h4 style="color: var(--primary-green); margin-bottom: var(--space-3);">Mobile Application</h4>
+                            <p style="color: var(--medium-gray); font-size: 0.9rem;">Farmer-friendly mobile interface for complete farm management on the go.</p>
+                        </div>
+                    </div>
+                    
+                    <div style="background: var(--light-gray); border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-base);">
+                        <img src="images/technology/irrigation-control.jpg" alt="Smart irrigation system" style="width: 100%; height: 200px; object-fit: cover;" 
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="image-placeholder prototype" style="display: none;">
+                            <i class="fas fa-faucet"></i>
+                            <div>Smart Irrigation Control</div>
+                        </div>
+                        <div style="padding: var(--space-6);">
+                            <h4 style="color: var(--primary-green); margin-bottom: var(--space-3);">Smart Irrigation Control</h4>
+                            <p style="color: var(--medium-gray); font-size: 0.9rem;">Automated irrigation controllers with precise water management capabilities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section style="background: linear-gradient(135deg, var(--primary-green), var(--light-green)); color: var(--white); padding: var(--space-20) 0;">
+            <div class="container">
+                <div style="max-width: 700px; margin: 0 auto; text-align: center;">
+                    <h2 style="color: var(--white); margin-bottom: var(--space-6);">
+                        Ready to Revolutionize Your Farm?
+                    </h2>
+                    <p class="text-large" style="color: rgba(255, 255, 255, 0.9); margin-bottom: var(--space-8);">
+                        Be among the first to experience breakthrough satellite-IoT technology. Join our pilot program and help us perfect the future of African agriculture.
+                    </p>
+                    
+                    <div style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap; margin-bottom: var(--space-8);">
+                        <a href="pilot-program.html" class="btn btn-xl" style="background: var(--white); color: var(--primary-green);">
+                            <i class="fas fa-rocket"></i>
+                            Join Pilot Program
+                        </a>
+                        <a href="contact.html" class="btn btn-xl" style="background: transparent; color: var(--white); border: 2px solid var(--white);">
+                            <i class="fas fa-envelope"></i>
+                            Contact Our Team
+                        </a>
+                    </div>
+                    
+                    <p style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem;">
+                        <i class="fas fa-calendar"></i> Pilot applications opening Q2 2025 |
+                        <i class="fas fa-users"></i> 5 farms selected |
+                        <i class="fas fa-gift"></i> Complete system provided free during testing
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logo/logo-white.png" alt="AgriConnect Logo">
+                        <span>AgriConnect</span>
+                    </div>
+                    <p>Building Africa's first satellite-powered smart farming platform with AIMS Cameroon research support and NMD satellite technology.</p>
+                    <div class="footer-social">
+                        <a href="mailto:agri.connek@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://wa.me/237650218174" target="_blank" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Technology</h4>
+                    <ul>
+                        <li><a href="#system-overview">System Overview</a></li>
+                        <li><a href="pilot-program.html">Test Our Technology</a></li>
+                        <li><a href="progress.html">Development Progress</a></li>
+                        <li><a href="beyond-agriculture.html">IoT Solutions</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="contact.html">Technical Questions</a></li>
+                        <li><a href="index.html">About AgriConnect</a></li>
+                        <li><a href="pilot-program.html">Partnership Opportunities</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:agri.connek@gmail.com">agri.connek@gmail.com</a></li>
+                        <li><a href="https://wa.me/237650218174" target="_blank">+237 650 218 174</a></li>
+                        <li>Limbe, Cameroon</li>
+                        <li><a href="contact.html">Get in Touch</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 AgriConnect. Building the future of African agriculture.</p>
+                    <p class="footer-tagline"><p>Inform, Connect, Inspire</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/analytics.js"></script>
+    
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+</body>
+</html>

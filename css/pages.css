@@ -1,0 +1,631 @@
+/* ===== PAGE-SPECIFIC STYLES ===== */
+
+/* ===== HOMEPAGE SPECIFIC ===== */
+.homepage-hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.homepage-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1.5" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>');
+    opacity: 0.6;
+}
+
+.homepage-stats {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: var(--radius-xl);
+    padding: var(--space-8);
+    margin-top: var(--space-8);
+}
+
+/* ===== TECHNOLOGY PAGE ===== */
+.technology-hero {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--light-green) 50%, var(--accent-green) 100%);
+    position: relative;
+}
+
+.technology-hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(180deg, transparent 0%, var(--white) 100%);
+}
+
+.tech-diagram-container {
+    background: var(--white);
+    border-radius: var(--radius-2xl);
+    padding: var(--space-12);
+    box-shadow: var(--shadow-2xl);
+    position: relative;
+    overflow: hidden;
+}
+
+.tech-diagram-container::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 10px,
+        rgba(76, 175, 80, 0.03) 10px,
+        rgba(76, 175, 80, 0.03) 20px
+    );
+    animation: move-bg 20s linear infinite;
+}
+
+@keyframes move-bg {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.prototype-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-6);
+}
+
+.prototype-card {
+    background: var(--white);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-base);
+    transition: var(--transition-all);
+    position: relative;
+}
+
+.prototype-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-2xl);
+}
+
+.prototype-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-green), var(--light-green));
+}
+
+/* ===== PILOT PROGRAM PAGE ===== */
+.pilot-hero {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--light-green) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.pilot-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="pilot-pattern" width="25" height="25" patternUnits="userSpaceOnUse"><circle cx="12.5" cy="12.5" r="1.5" fill="rgba(255,255,255,0.08)"/><circle cx="6" cy="19" r="0.8" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23pilot-pattern)"/></svg>');
+    opacity: 0.3;
+}
+
+.pilot-application-form {
+    background: var(--white);
+    border-radius: var(--radius-2xl);
+    padding: var(--space-12);
+    box-shadow: var(--shadow-xl);
+    border: 1px solid var(--border-light);
+    margin-top: -60px;
+    position: relative;
+    z-index: 10;
+}
+
+.form-section-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border-light), transparent);
+    margin: var(--space-10) 0;
+}
+
+.requirement-checklist {
+    background: var(--very-light-green);
+    border-radius: var(--radius-lg);
+    padding: var(--space-6);
+    border-left: 4px solid var(--primary-green);
+}
+
+.requirement-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-3);
+    margin-bottom: var(--space-2);
+    background: var(--white);
+    border-radius: var(--radius-md);
+    transition: var(--transition-all);
+}
+
+.requirement-item:hover {
+    transform: translateX(4px);
+    box-shadow: var(--shadow-md);
+}
+
+.pilot-timeline-container {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.pilot-timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, var(--primary-green), var(--light-green));
+}
+
+/* ===== ABOUT PAGE ===== */
+.about-hero {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--light-green) 70%, var(--accent-green) 100%);
+    position: relative;
+}
+
+.about-hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(180deg, transparent 0%, var(--white) 100%);
+}
+
+.mission-vision-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: var(--space-12);
+}
+
+.mission-card, .vision-card {
+    background: var(--white);
+    padding: var(--space-10);
+    border-radius: var(--radius-2xl);
+    box-shadow: var(--shadow-lg);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.mission-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(90deg, var(--primary-green), var(--light-green));
+}
+
+.vision-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(90deg, var(--light-green), var(--accent-green));
+}
+
+/* ===== TEAM PAGE ===== */
+.team-hero {
+    background: linear-gradient(135deg, rgba(46, 125, 50, 0.9), rgba(76, 175, 80, 0.8)), url('../images/team/team-working-hero.jpg') center/cover;
+}
+
+.team-member-card {
+    background: var(--white);
+    border-radius: var(--radius-2xl);
+    padding: var(--space-8);
+    box-shadow: var(--shadow-base);
+    transition: var(--transition-all);
+    position: relative;
+    overflow: hidden;
+}
+
+.team-member-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-green), var(--light-green), var(--accent-green));
+}
+
+.team-member-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-2xl);
+}
+
+.member-role-badge {
+    background: linear-gradient(135deg, var(--primary-green), var(--light-green));
+    color: var(--white);
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-full);
+    font-size: 0.875rem;
+    font-weight: var(--font-weight-semibold);
+    display: inline-block;
+    margin-bottom: var(--space-4);
+}
+
+/* ===== PROGRESS PAGE ===== */
+.progress-hero {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--light-green) 50%, var(--accent-green) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><defs><pattern id="progress-grid" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23progress-grid)"/></svg>');
+    opacity: 0.3;
+}
+
+.current-status-dashboard {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: var(--radius-2xl);
+    padding: var(--space-10);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: var(--space-8);
+}
+
+.progress-metric {
+    text-align: center;
+    position: relative;
+}
+
+.progress-circle {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto var(--space-4);
+}
+
+.progress-circle svg {
+    transform: rotate(-90deg);
+    width: 120px;
+    height: 120px;
+}
+
+.progress-percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-green);
+}
+
+.milestone-timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.milestone-timeline::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(to bottom, var(--primary-green), var(--light-green));
+    z-index: 1;
+}
+
+.milestone-item {
+    position: relative;
+    margin-bottom: var(--space-16);
+    padding-left: var(--space-16);
+}
+
+.milestone-item.current::before {
+    animation: pulse-glow 2s infinite;
+}
+
+@keyframes pulse-glow {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 0 10px rgba(76, 175, 80, 0);
+    }
+}
+
+/* ===== CONTACT PAGE ===== */
+.contact-hero {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--light-green) 100%);
+    position: relative;
+}
+
+.contact-options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-8);
+}
+
+.contact-option-card {
+    background: var(--white);
+    padding: var(--space-8);
+    border-radius: var(--radius-xl);
+    text-align: center;
+    box-shadow: var(--shadow-base);
+    transition: var(--transition-all);
+    border-left: 4px solid transparent;
+}
+
+.contact-option-card:nth-child(1) {
+    border-left-color: var(--primary-green);
+}
+
+.contact-option-card:nth-child(2) {
+    border-left-color: var(--light-green);
+}
+
+.contact-option-card:nth-child(3) {
+    border-left-color: var(--accent-green);
+}
+
+.contact-option-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+}
+
+.contact-form-container {
+    background: var(--white);
+    border-radius: var(--radius-2xl);
+    padding: var(--space-12);
+    box-shadow: var(--shadow-xl);
+    border: 1px solid var(--border-light);
+    position: relative;
+}
+
+.contact-form-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(90deg, var(--primary-green), var(--light-green), var(--accent-green));
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.form-radio-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--space-3);
+    margin-bottom: var(--space-8);
+}
+
+.radio-option {
+    position: relative;
+}
+
+.radio-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.radio-option label {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-3);
+    border: 2px solid var(--border-light);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: var(--transition-all);
+    background: var(--white);
+}
+
+.radio-option input[type="radio"]:checked + label {
+    border-color: var(--primary-green);
+    background: var(--very-light-green);
+    transform: scale(1.02);
+}
+
+/* ===== BEYOND AGRICULTURE PAGE ===== */
+.beyond-hero {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--light-green) 50%, var(--accent-green) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.beyond-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="industry-pattern" width="30" height="30" patternUnits="userSpaceOnUse"><rect x="14" y="14" width="2" height="2" fill="rgba(255,255,255,0.1)"/><rect x="5" y="25" width="1" height="1" fill="rgba(255,255,255,0.08)"/><rect x="25" y="5" width="1" height="1" fill="rgba(255,255,255,0.06)"/></pattern></defs><rect width="100" height="100" fill="url(%23industry-pattern)"/></svg>');
+    opacity: 0.4;
+}
+
+.industry-showcase {
+    background: var(--white);
+    border-radius: var(--radius-2xl);
+    padding: var(--space-12);
+    margin-bottom: var(--space-12);
+    box-shadow: var(--shadow-lg);
+    position: relative;
+    overflow: hidden;
+}
+
+.industry-showcase::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(90deg, #1565c0, #1976d2, #1e88e5);
+}
+
+.industry-showcase.environmental::before {
+    background: linear-gradient(90deg, #7b1fa2, #9c27b0, #ab47bc);
+}
+
+.industry-showcase.infrastructure::before {
+    background: linear-gradient(90deg, #388e3c, #4caf50, #66bb6a);
+}
+
+.service-capabilities {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+}
+
+.capability-item {
+    background: var(--light-gray);
+    padding: var(--space-6);
+    border-radius: var(--radius-lg);
+    transition: var(--transition-all);
+}
+
+.capability-item:hover {
+    background: var(--very-light-green);
+    transform: translateY(-2px);
+}
+
+/* ===== RESPONSIVE OVERRIDES ===== */
+@media (max-width: 768px) {
+    .tech-diagram-container,
+    .pilot-application-form,
+    .contact-form-container {
+        padding: var(--space-6);
+        margin-top: -30px;
+    }
+    
+    .mission-vision-cards {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+    }
+    
+    .team-member-card {
+        padding: var(--space-6);
+    }
+    
+    .current-status-dashboard {
+        padding: var(--space-6);
+    }
+    
+    .progress-circle {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .progress-circle svg {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .form-radio-group {
+        grid-template-columns: 1fr;
+    }
+    
+    .service-capabilities {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .prototype-gallery {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-options-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .progress-metric {
+        margin-bottom: var(--space-6);
+    }
+}
+
+/* ===== ACCESSIBILITY ENHANCEMENTS ===== */
+@media (prefers-reduced-motion: reduce) {
+    .prototype-card,
+    .team-member-card,
+    .contact-option-card,
+    .milestone-item,
+    .capability-item {
+        transition: none;
+    }
+    
+    .milestone-item.current::before {
+        animation: none;
+    }
+    
+    .tech-diagram-container::before {
+        animation: none;
+    }
+}
+
+/* Focus states for better accessibility */
+.radio-option input[type="radio"]:focus + label {
+    outline: 2px solid var(--primary-green);
+    outline-offset: 2px;
+}
+
+.requirement-item:focus-within {
+    outline: 2px solid var(--primary-green);
+    outline-offset: 2px;
+    border-radius: var(--radius-md);
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+    .pilot-hero,
+    .contact-hero,
+    .about-hero,
+    .technology-hero,
+    .beyond-hero,
+    .progress-hero {
+        background: var(--white) !important;
+        color: var(--dark-gray) !important;
+    }
+    
+    .btn {
+        border: 2px solid var(--primary-green) !important;
+        background: transparent !important;
+        color: var(--primary-green) !important;
+    }
+    
+    .team-member-card,
+    .contact-option-card,
+    .industry-showcase {
+        box-shadow: none !important;
+        border: 1px solid var(--border-light) !important;
+    }
+}

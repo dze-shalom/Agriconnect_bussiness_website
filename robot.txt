@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://agriconnect.cm/sitemap.xml
+
+# Disallow private areas
+Disallow: /backend/
+Disallow: /temp/
+Disallow: /logs/
+Disallow: *.log
+Disallow: /config.php
+Disallow: /.git/
+
+# Allow specific files
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Crawl delay (optional)
+Crawl-delay: 1
