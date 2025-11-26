@@ -2,22 +2,31 @@
 
 /* CSS Variables - Your Original Colors Enhanced */
 :root {
-    /* Your Original Colors */
-    --primary-green: #2e7d32;
-    --light-green: #4caf50;
-    --accent-green: #66bb6a;
+    /* Primary Brand Colors */
+    --primary-green: #1b5e20;
+    --primary-green-dark: #0d3d12;
+    --light-green: #388e3c;
+    --accent-green: #4caf50;
+    --bright-green: #66bb6a;
     --very-light-green: #e8f5e9;
+
+    /* Neutral Colors */
     --white: #ffffff;
-    --dark-gray: #1a1a1a;
-    --medium-gray: #4a4a4a;
-    --light-gray: #f8f9fa;
-    --border-light: #e1e5e9;
-    
-    /* Enhanced Color Palette */
-    --green-50: #f1f8e9;
-    --green-100: #dcedc8;
-    --green-600: #7cb342;
-    --green-700: #689f38;
+    --dark-gray: #0f1419;
+    --medium-gray: #525252;
+    --light-gray: #f5f7f9;
+    --border-light: #e5e7eb;
+
+    /* Enhanced Palette */
+    --green-50: #f0fdf4;
+    --green-100: #dcfce7;
+    --green-600: #16a34a;
+    --green-700: #15803d;
+    --green-800: #166534;
+
+    /* Accent Colors */
+    --accent-blue: #0ea5e9;
+    --accent-amber: #f59e0b;
     
     /* Typography */
     --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -94,6 +103,7 @@ body {
     background-color: var(--white);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 /* Typography */
@@ -106,37 +116,41 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-size: clamp(3rem, 6vw, 5rem);
     font-weight: var(--font-weight-black);
-    line-height: 1.1;
-    letter-spacing: -0.03em;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
 }
 
 h2 {
-    font-size: clamp(2rem, 4vw, 3rem);
-    font-weight: var(--font-weight-bold);
-    line-height: 1.2;
+    font-size: clamp(2.25rem, 4.5vw, 3.5rem);
+    font-weight: var(--font-weight-black);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
 }
 
 h3 {
-    font-size: clamp(1.5rem, 3vw, 2rem);
-    font-weight: var(--font-weight-semibold);
+    font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: -0.01em;
 }
 
 h4 {
-    font-size: clamp(1.25rem, 2.5vw, 1.5rem);
-    font-weight: var(--font-weight-semibold);
+    font-size: clamp(1.35rem, 2.75vw, 1.75rem);
+    font-weight: var(--font-weight-bold);
 }
 
 p {
     margin-bottom: var(--space-4);
     font-size: 1.125rem;
-    line-height: 1.8;
+    line-height: 1.75;
+    color: var(--medium-gray);
 }
 
 .text-large {
-    font-size: 1.25rem;
-    line-height: 1.8;
+    font-size: 1.35rem;
+    line-height: 1.7;
+    font-weight: var(--font-weight-medium);
 }
 
 .text-small {
@@ -382,8 +396,8 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(46, 125, 50, 0.85), rgba(76, 175, 80, 0.75));
-    backdrop-filter: blur(2px);
+    background: linear-gradient(135deg, rgba(27, 94, 32, 0.92) 0%, rgba(56, 142, 60, 0.85) 50%, rgba(76, 175, 80, 0.78) 100%);
+    backdrop-filter: blur(3px);
 }
 
 .hero-content {
@@ -396,18 +410,19 @@ header {
 .development-badge {
     display: inline-flex;
     align-items: center;
-    gap: var(--space-2);
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(15px);
+    gap: var(--space-3);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.15));
+    backdrop-filter: blur(20px);
     color: var(--white);
-    padding: var(--space-3) var(--space-5);
+    padding: var(--space-3) var(--space-6);
     border-radius: var(--radius-full);
-    font-size: 0.875rem;
-    font-weight: var(--font-weight-semibold);
+    font-size: 0.95rem;
+    font-weight: var(--font-weight-bold);
     margin-bottom: var(--space-8);
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.3);
     animation: fadeInDown 0.6s ease-out;
+    letter-spacing: 0.5px;
 }
 
 @keyframes fadeInDown {
@@ -423,24 +438,29 @@ header {
 
 .hero h1 {
     color: var(--white);
-    margin-bottom: var(--space-6);
-    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    line-height: 1.2;
+    margin-bottom: var(--space-8);
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    line-height: 1.1;
 }
 
 .text-highlight {
+    display: block;
     color: var(--very-light-green);
-    background: linear-gradient(135deg, var(--very-light-green), #ffffff);
+    background: linear-gradient(120deg, #a7f3d0 0%, #ffffff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    margin-top: var(--space-2);
+    font-weight: var(--font-weight-black);
 }
 
 .hero-subtitle {
-    font-size: 1.25rem;
-    line-height: 1.8;
-    margin-bottom: var(--space-8);
-    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.35rem;
+    line-height: 1.7;
+    margin-bottom: var(--space-10);
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: var(--font-weight-medium);
+    max-width: 700px;
 }
 
 .hero-stats {
@@ -523,7 +543,11 @@ header {
 
 /* Section Styling */
 section {
-    padding: var(--space-20) 0;
+    padding: var(--space-24) 0;
+}
+
+section:nth-child(even) {
+    background: linear-gradient(180deg, var(--white) 0%, var(--light-gray) 100%);
 }
 
 .section-header {
@@ -562,7 +586,25 @@ section {
 
 /* Status Timeline */
 .status-section {
-    background: var(--light-gray);
+    background: linear-gradient(180deg, var(--green-50) 0%, var(--white) 50%, var(--green-50) 100%);
+    position: relative;
+}
+
+.status-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="status-pattern" width="40" height="40" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="0.5" fill="rgba(27, 94, 32, 0.08)"/></pattern></defs><rect width="100" height="100" fill="url(%23status-pattern)"/></svg>');
+    opacity: 0.4;
+    z-index: 0;
+}
+
+.status-section .container {
+    position: relative;
+    z-index: 1;
 }
 
 .status-timeline {
@@ -713,7 +755,25 @@ section {
 
 /* Team Spotlight */
 .team-spotlight {
-    background: var(--very-light-green);
+    background: linear-gradient(135deg, var(--white) 0%, var(--green-50) 50%, var(--very-light-green) 100%);
+    position: relative;
+}
+
+.team-spotlight::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(76, 175, 80, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(27, 94, 32, 0.05) 0%, transparent 50%);
+    z-index: 0;
+}
+
+.team-spotlight .container {
+    position: relative;
+    z-index: 1;
 }
 
 .team-grid {
@@ -890,8 +950,27 @@ section {
 
 /* Pilot CTA */
 .pilot-cta {
-    background: linear-gradient(135deg, var(--primary-green), var(--light-green));
+    background: linear-gradient(135deg, var(--primary-green-dark) 0%, var(--primary-green) 40%, var(--light-green) 100%);
     color: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+
+.pilot-cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="pilot-pattern" width="30" height="30" patternUnits="userSpaceOnUse"><circle cx="15" cy="15" r="1" fill="rgba(255, 255, 255, 0.05)"/><circle cx="5" cy="25" r="0.5" fill="rgba(255, 255, 255, 0.03)"/></pattern></defs><rect width="100" height="100" fill="url(%23pilot-pattern)"/></svg>');
+    opacity: 0.6;
+    z-index: 0;
+}
+
+.pilot-cta .container {
+    position: relative;
+    z-index: 1;
 }
 
 .cta-content {
@@ -967,21 +1046,26 @@ section {
 }
 
 .stat-number {
-    font-size: 3rem;
-    font-weight: var(--font-weight-bold);
+    font-size: 3.5rem;
+    font-weight: var(--font-weight-black);
     color: var(--white);
     display: block;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    line-height: 1;
 }
 
 .stat-text {
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.8);
-    margin-top: var(--space-2);
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-top: var(--space-3);
+    font-weight: var(--font-weight-medium);
 }
 
 /* Beyond Agriculture */
 .beyond-agriculture {
-    background: var(--light-gray);
+    background: linear-gradient(180deg, var(--white) 0%, var(--light-gray) 50%, var(--white) 100%);
+    border-top: 1px solid var(--border-light);
+    border-bottom: 1px solid var(--border-light);
 }
 
 .iot-services {
