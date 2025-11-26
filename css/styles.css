@@ -951,9 +951,13 @@ section:nth-child(even) {
 /* Pilot CTA */
 .pilot-cta {
     background: linear-gradient(135deg, var(--primary-green-dark) 0%, var(--primary-green) 40%, var(--light-green) 100%);
-    color: var(--white);
+    color: var(--white) !important;
     position: relative;
     overflow: hidden;
+}
+
+.pilot-cta * {
+    color: var(--white);
 }
 
 .pilot-cta::before {
@@ -981,12 +985,12 @@ section:nth-child(even) {
 }
 
 .cta-text h2 {
-    color: var(--white);
+    color: var(--white) !important;
     margin-bottom: var(--space-6);
 }
 
 .cta-text p {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.95) !important;
     margin-bottom: var(--space-8);
 }
 
@@ -999,13 +1003,17 @@ section:nth-child(even) {
     align-items: center;
     gap: var(--space-3);
     margin-bottom: var(--space-3);
-    color: rgba(255, 255, 255, 0.95);
+    color: rgba(255, 255, 255, 0.95) !important;
     padding: var(--space-3);
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: var(--radius-md);
     border-left: 3px solid rgba(255, 255, 255, 0.5);
     transition: var(--transition-all);
+}
+
+.benefit-item span {
+    color: rgba(255, 255, 255, 0.95) !important;
 }
 
 .benefit-item:hover {
@@ -1016,6 +1024,7 @@ section:nth-child(even) {
 
 .benefit-item i {
     font-size: 1.25rem;
+    color: var(--white) !important;
 }
 
 .cta-actions {
@@ -1024,7 +1033,7 @@ section:nth-child(even) {
 
 .cta-note {
     font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.85) !important;
 }
 
 .stats-card {
